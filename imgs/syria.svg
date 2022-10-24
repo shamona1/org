@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1066.6664"
+   height="600"
+   version="1.1"
+   id="svg40"
+   sodipodi:docname="Flag_of_Syria_(1930–1958,_1961–1963).svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs44" />
+  <sodipodi:namedview
+     id="namedview42"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="653.36667"
+     inkscape:cy="336.58283"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg40" />
+  <g
+     stroke-width="150"
+     id="g30"
+     transform="scale(0.88888866,1)">
+    <path
+       d="M 0,0 V 600 H 1200 V 0 Z"
+       fill="#007a3d"
+       id="path24" />
+    <path
+       d="M 0,200 V 600 H 1200 V 200 Z"
+       fill="#ffffff"
+       id="path26" />
+    <path
+       d="M 0,400 V 600 H 1200 V 400 Z"
+       id="path28" />
+  </g>
+  <g
+     id="g362"
+     transform="translate(-66.666804)">
+    <path
+       d="M 600.012,213.6 656.0244,386.4 509.376,279.6048 H 690.624 L 543.9756,386.4 599.9892,213.6 Z"
+       id="path32"
+       style="fill:#ce1126;stroke-width:0.9588" />
+    <path
+       d="M 300.012,213.6 356.0244,386.4 209.376,279.6048 H 390.624 L 243.9756,386.4 299.9892,213.6 Z"
+       id="path34"
+       style="fill:#ce1126;stroke-width:0.9588" />
+    <path
+       d="M 900.012,213.6 956.0244,386.4 809.376,279.6048 H 990.624 L 843.9756,386.4 899.9892,213.6 Z"
+       id="path36"
+       style="fill:#ce1126;stroke-width:0.9588" />
+  </g>
+</svg>
