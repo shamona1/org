@@ -1,0 +1,1029 @@
+
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+  
+
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+
+
+
+
+  
+  <title>صفحة التبرع</title>
+  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  
+  <style>
+.tona{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: #858585;
+    width: auto; 
+    height: auto; 
+    text-align: center; 
+    font-size: 12px; 
+    font-family: "Cairo";  
+       box-shadow: 0px 0px 2px 0px rgba(0,0,0,.4), 0 0 0 1px rgba(0,0,0,.09);
+}
+.tona.active{
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,.4), 0 0 0 1px rgba(0,0,0,.09);
+        border: 1px solid #0365EA;
+            background-color: #ECF5FE;
+               color: #0365EA;
+                   font-size: 13px; 
+                    
+}
+
+[tooltip]{
+  margin: 6px; 
+  position:relative;
+  display:inline-block;
+    
+}
+[tooltip]::before {
+    content: "";
+    position: absolute;
+    top:-6px;
+    left:50%;
+    transform: translateX(-50%);
+    border-width: 4px 6px 0 6px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.7) transparent transparent     transparent;
+    z-index: 99;
+    opacity:0;
+}
+
+
+[tooltip-position='top']::before{
+  left:50%;
+}
+
+
+
+
+
+[tooltip]::after {
+    content: attr(tooltip);
+    position: absolute;
+    left:50%;
+    top:-6px;
+    transform: translateX(-50%)   translateY(-100%);
+    background: rgba(0,0,0,0.9);
+    text-align: center;
+    color: #fff;
+    padding:4px 2px;
+    font-size: 11px;
+    min-width: 160px;
+    border-radius: 5px;
+    pointer-events: none;
+    padding: 4px 4px;
+    z-index:99;
+    opacity:0;
+  
+}
+
+
+[tooltip-position='top']::after{
+  left:50%;
+}
+
+[tooltip]:hover::after,[tooltip].active:hover::before {
+   opacity:1
+ 
+}
+
+
+
+
+
+</style>
+  
+<style>
+	 	@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    height: 100%
+}
+
+p {
+    color: grey
+}
+
+#heading {
+    text-transform: uppercase;
+    color: #673AB7;
+    font-weight: normal; 
+        font-size: 15px;
+
+        
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+    
+}
+
+.form-card {
+    text-align: right
+       top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+  
+  color: #111111;
+  font-size: 13px;
+   
+    margin: 4px;
+   
+    box-sizing: border-box;
+    font-family: "Cairo" ;
+    outline: none; 
+}
+
+#msform input:focus, 
+#msform textarea:focus
+
+{
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #673AB7;
+    
+  
+
+  outline: none; 
+
+}
+
+#msform .action-button {
+    width: 200px;
+    background: #0496CB;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 20px;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+  
+    padding-right: 30px;
+        padding-left: 30px;
+        padding: 12px; 
+     
+    margin-top: 20px;
+    font-size: 14px; 
+   
+}
+
+
+.acon {
+    width: auto;
+    background: #0496CB;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 20px;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+    padding-right: 30px;
+        padding-left: 30px;
+      margin-bottom: 7px;
+    margin-top: 20px;
+   
+}
+
+.aaction-button {
+    width: 200px;
+    background: #eee;
+    font-weight: bold;
+    color: #8D8D8D;
+    font-family: "Cairo";  
+    border: 0 none;
+    border-radius: 20px;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+    padding-right: 30px;
+        padding-left: 30px;
+        padding: 12px; 
+     border: none;   
+    margin-top: 20px;
+    font-size: 14px; 
+       margin-bottom: 7px;
+}
+
+#msform .action-button2 {
+    width: 100px;
+      font-size: 15px; 
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 20px;
+    font-family: "Cairo";  
+    padding: 10px 6px;
+    margin: 5px;
+       background: #0496CB;
+   margin-top: 19px;
+    
+}
+
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 20px;
+    font-family: "Cairo";  
+    padding: 10px 6px;
+    margin: 5px;
+    margin-top: 19px;
+        font-size: 15px; 
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #000000
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 15px;
+    color: #673AB7;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #673AB7;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+
+}
+
+#progressbar .active {
+    color: #673AB7
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: right;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f4be"
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f2c2"; 
+  
+    
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f1d8"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+    
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #E22464
+}
+
+.progress {
+    height: 20px
+    
+}
+
+.progress-bar {
+    background-color: #E22464
+    
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+
+
+
+
+
+
+.bon
+{
+
+background: #fff;
+border-radius:3%;
+border:3px solid #fff;
+display: flex; 
+width:51px;
+height:51px;
+position:absolute;
+left:12px;
+
+  margin: auto;
+  top: 0;
+  
+  bottom: 0;
+  
+
+}
+.vv{
+	
+	display: none; 
+	
+	} 
+	
+	
+	
+	
+	
+	
+	
+.fff{
+	font-size: 0px; color:#39B54A; 
+	
+	} 
+.sec{
+	padding: 9;font-size: 13px; background:#39B54A;  
+    width: 88%;
+    text-align: center; 
+  display: none; 
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    margin: 0 auto;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+  font-family:'Cairo'; 
+ 
+  margin-bottom: 60px;
+    margin-top: 60px;
+	
+	} 
+
+
+
+</style>
+
+  
+
+
+</head>
+
+<body translate="no" >
+	
+
+
+
+
+
+
+
+
+
+	
+  <div style="margin-bottom: 0;" class="container-fluid">
+  	
+  
+    <div style="" class="row justify-content-center">
+    	
+  
+      <div style="   border-right: 1px solid #ccc;  border-left: 1px solid #ccc; box-shadow: 0 8px 15px -5px #333, 0 5px 5px -5px #333;border-top:10px solid #E22464;border-bottom:4px solid #E22464;" class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+        	
+ 
+            <div clss="card px-0 pt-4 pb-0 mt-3 mb-3">
+
+    
+                <form id="msform"   enctype="text/plain" accept-charset="utf-8">
+                    
+                    <ul id="progressbar">
+                        
+
+<li id="account"></li>
+    <li id="personal"></li>
+     <li id="payment"></li>
+  <li id="confirm"></li>
+                   
+</ul>
+                    <div class="all progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br> 
+                    <fieldset>
+                    	
+                    
+                        <div class="form-card">
+                        	
+                        
+
+                        
+                            <div class="rw">
+                                <div class="col">
+                                	
+
+
+<div id="t6" class="bt tona"  tooltp="
+أريد الزواج بهاته الفتاة ودفع كامل دينها
+"> 
+أريد الزواج بهاته الفتاة ودفع دينها كاملا... 
+<div>
+	إجمالي الدين هو: 
+	
+<span style="font-size: 13px; font-family:'Cairo' ; 
+color:#E22464;"  id="kridi"></span>
+</div>
+</div>   
+                                	           <input class=""  type="hidden" id="dx"/>
+
+    <input type="hidden" id="num"/>    
+                            
+                           
+                                </div>
+                        
+                            </div> 
+
+
+
+
+                        </div>          
+
+
+<div class="divv aaction-button" >
+أنقر على الزر أعلاه لتأكيد طلبك
+</div>
+
+<input type="button" name="next" class="vv next action-button" value="التالي" />
+                    </fieldset>
+                    
+                    
+                    
+                    
+                <fieldset >
+                    	
+                    
+                        <div class="form-card">
+                        	
+                        
+
+                        
+                            <div class="rw">
+                                <div class="col">
+       <style>
+  
+
+
+
+</style>                         	
+
+       <div style="width: 78%; ">
+  <textarea class="name" type="text" id="d" placeholder="المرجو كتابة بياناتك وأوصافك كاملة هنا" >
+</textarea>
+  <input style="right: 0; "class="city" type="text" id="d2" placeholder="المرجو تحديد جنسيتك" />
+  
+
+  	
+  
+
+
+</div>
+   <div  id="qr_code" class="bon" ></div>    
+                            
+                           
+                                </div>
+                        
+                            </div> 
+
+
+
+
+                        </div>          
+    <input type="button" name="previous" class="previous action-button-previous" value="الرجوع" />
+
+<input type="button" name="next" class="next action-button2" value="التالي" />
+                    </fieldset>               
+                    
+                    
+             
+                    
+                    
+                                                   <fieldset>
+                    	
+                    
+                        <div class="form-card">
+                        	
+                        
+                        
+                        
+                            <div class="rw">
+                                <div class="col">
+                                	
+<p style="font-size: 19px; font-family:'Cairo' ; color:red; " >
+                                تذكير هام: 
+</p>
+<p style="font-size: 15px; font-family:'Cairo' ; color:#160248; ">
+بعد وصول رسالتك إلينا سيتم معاينتها من فريق العمل وإن كان كل شيء سليما سيتم تزويدك ببطاقة لجوء الفتاة المعنية من أجل تحويل قيمة دينها باسمها مباشرة.  وبعد التأكد من التحويل سيتم موافاتك بعنوانها للتواصل بها مباشرة وترتيب أمر الزواج معها.
+<p>                              
+                                </div>
+                        
+                            </div> 
+
+
+
+
+                        </div>          
+    <input type="button" name="previous" class="previous action-button-previous" value="الرجوع" />
+
+                    
+
+<input type="button"  name="next" class="next action-button2" value="التالي" />
+                    </fieldset>
+                    
+                    
+                    
+                    
+                    
+                    <fieldset>
+                        <div  class="all form-card">
+                            <div class="rw">
+                                <div class="col">
+                                	
+   <div style="    font-weight: 500;font-size: 13px; font-family:'Cairo' ; 
+color:#160248; ">                             
+بضغطي على زر إرسال أنا أؤكد رغبتي الزواج ودفع دين هاته الفتاة صاحبة الرقم المرجعي: 
+
+<span style="    font-weight: bold;font-size: 13px; font-family:'Cairo' ; 
+color:blue;"  id="spa"></span>
+<br><hr>
+	<span style="    font-weight: 500;font-size: 12px; font-family:'Cairo' ; 
+color:#B90049;"  >
+	
+	كما أقسم بالله العظيم أني جاد وغير عابث وأبتغي الخير والإحسان وهدفي إصابة الحلال الطيب وفق كتاب الله وسنة رسوله وأشهد الله أني لا أحمل السوء ولا أنوي استغلال ظروف ولا حاجة هاته الفتاة لمآرب سيئة تخالف الدين والشرع والله خير الشاهدين...
+	</span>
+</div>
+
+                              
+                                </div>
+                            </div>
+                        </div>
+                        
+                            
+                        <div  id="send" type="button" style="padding-right: 20px;padding-left: 20px;
+font-family:'Cairo'; font-size: 22px; height: auto; padding: 6;width: 150px"  class="nnn next action-button" >
+                        
+                        <i style="font-size: 22px; margin-left:6px; " class="fas fa-paper-plane" aria-hidden="true"></i>
+إرسال
+</div>
+                        
+                  
+                    </fieldset>
+                    
+                    
+
+                           	
+                           
+                           
+                           
+                           
+                           
+                           
+                            <div id="end" style=" display: none; " >     
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col">
+       	
+
+  <i style="" class="fff fa-solid fa-circle-check"></i>
+
+ 
+  
+                              
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="sec" >
+	شكر الله إحسانك وجعله في ميزان حسناتك... 
+            </div>           
+            <br>  
+
+
+                          <div style="width: 17%; "> 
+              <svg id="nnnn" style="margin-bottom: 10px;" data-name="Layer 1" fill="#bbb" width="26" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.04 122.88"><path d="M16.08,59.26A8,8,0,0,1,0,59.26a59,59,0,0,1,97.13-45V8a8,8,0,1,1,16.08,0V33.35a8,8,0,0,1-8,8L80.82,43.62a8,8,0,1,1-1.44-15.95l8-.73A43,43,0,0,0,16.08,59.26Zm22.77,19.6a8,8,0,0,1,1.44,16l-10.08.91A42.95,42.95,0,0,0,102,63.86a8,8,0,0,1,16.08,0A59,59,0,0,1,22.3,110v4.18a8,8,0,0,1-16.08,0V89.14h0a8,8,0,0,1,7.29-8l25.31-2.3Z"/></svg>      
+                    
+                  </div>                     
+  
+            </div>
+ 
+   
+                </form>
+                
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+	                  <div style="border-radius: 25px;  background: #E22464;
+padding-right: 10px; padding-left: 10px;color: #fff; margin: 30px; margin-top: 30px;
+font-family:'Cairo'; text-align: center; font-size: 12px; padding: 4;width: 80px" id="home" >
+                        
+                        <i style="font-size: 12px;  " class="fa-sharp fa-solid fa-house" aria-hidden="true"></i>
+الرئيسية
+</div> 
+	
+		 
+
+
+
+
+
+        
+
+
+	
+
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='qrcode.min.js'></script>
+<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+
+      <script>
+     
+
+function getQueryStringParam(param) {
+  var url = window.location.toString();
+  url.match(/\?(.+)$/);
+  var params = RegExp.$1;
+  params = params.split("&");
+  var queryStringList = {};
+  for(var i = 0; i < params.length; i++) {
+    var tmp = params[i].split("=");
+    queryStringList[tmp[0]] = unescape(tmp[1]);
+  }
+  return queryStringList[param];
+}
+
+
+
+if (getQueryStringParam("ref")) {
+  var XX = getQueryStringParam("ref");
+  document.getElementById("num").value = XX ;
+ document.getElementById("spa").innerHTML = XX ;
+} 
+
+ 	if (getQueryStringParam("dona")) {
+  var kri = getQueryStringParam("dona");
+  document.getElementById("dx").value = kri;
+ document.getElementById("kridi").innerHTML = kri ;
+} 
+
+ 
+ 
+ 
+ 
+ 
+ 
+      
+$(document).ready(function () {
+
+  var current_fs, next_fs, previous_fs; //fieldsets
+  var opacity;
+  var current ;
+  var steps = $("fieldset").length;
+
+
+
+    $(".bt").click(function () {
+  	   current = 1;
+    setProgressBar(current);
+   $("#account").addClass("active");
+
+  }); 
+  
+  $(".next").click(function () {
+
+    current_fs = $(this).parent();
+    next_fs = $(this).parent().next();
+
+    //Add Class Active
+    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+    //show the next fieldset
+    next_fs.show();
+    //hide the current fieldset with style
+    current_fs.animate({ opacity: 0 }, {
+      step: function (now) {
+        // for making fielset appear animation
+        opacity = 1 - now;
+
+        current_fs.css({
+          'display': 'none',
+          'position': 'relative' });
+
+        next_fs.css({ 'opacity': opacity });
+      },
+      duration: 500 });
+
+    setProgressBar(++current);
+  });
+
+  $(".previous").click(function () {
+
+    current_fs = $(this).parent();
+    previous_fs = $(this).parent().prev();
+
+    //Remove class active
+    $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+    //show the previous fieldset
+    previous_fs.show();
+
+    //hide the current fieldset with style
+    current_fs.animate({ opacity: 0 }, {
+      step: function (now) {
+        // for making fielset appear animation
+        opacity = 1 - now;
+
+        current_fs.css({
+          'display': 'none',
+          'position': 'relative' });
+
+        previous_fs.css({ 'opacity': opacity });
+      },
+      duration: 500 });
+
+    setProgressBar(--current);
+  });
+
+  function setProgressBar(curStep) {
+    var percent = parseFloat(100 / steps) * curStep;
+    percent = percent.toFixed();
+    $(".progress-bar").
+    css("width", percent + "%");
+  }
+
+  $(".submit").click(function () {
+    return false;
+  });
+
+});
+
+    </script>
+
+<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+
+      <script >
+      	 
+function updateQRCode() {
+	
+  let textValue = "  " + $(".name").val()  +  $(".city").val();
+
+  $("#qr_code").html("");
+
+  var qrcode = new QRCode("qr_code", {
+ 
+    text: textValue,
+    width: 50,
+    height: 50,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+ });
+
+}
+
+
+
+
+updateQRCode(); 
+  $(".name,  .city").on('keyup change keydown paste', function () {
+    updateQRCode();
+   
+  });
+
+  </script>
+  <script>
+  
+  $(".tona").on('click', function(){
+    $(".tona").removeClass('active');
+     $(".tooltip").removeClass('active');
+    $(this).addClass('active');
+    
+});
+
+      
+
+
+     
+       $('#t6').on('click', function(){
+    	if (getQueryStringParam("dona")) {
+    $('.vv').val(kri+  '    التالي'); 
+       
+        } 
+             
+     $('.vv').css("display","block"); 
+      $('.divv').hide(); 
+     });
+     
+         
+
+         
+      $('.nnn').on('click', function(){
+   
+         	     $('.all').css("display","none"); 
+		  	          $('#end').css("display","block"); 
+	    
+	  setTimeout(() => {
+		      $('.sec').css("display","block"); 
+		 
+         	 $('.fff').css("font-size","55px"); 	
+   
+           }, 3000);	
+  
+
+     
+     });
+      
+
+  	  $('#nnnn').on('click', function(){
+  		     $('.all').css("display","block"); 
+  window.location.assign(window.location.href)
+  
+       });
+  
+
+ 	  $('#home').on('click', function(){
+  		    
+  window.location.assign("https://sham-syria.org")
+  
+       });
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+  $('#send').on('click', function(e) {
+    e.preventDefault();
+ 
+    var mailto_link = 'mailto:info@sham-syria.org'
+ + '?subject= أريد الزواج بهاته الفتاة ودفع كامل دينها'  
++
+ '&body=' 
++
+"بياناتي:    "+d.value+'%0A%0A%0A'
++
+
+"جنسيتي:    "+d2.value+'%0A'
+
++
+"أريد الزواج بهاته الفتاة ودفع كامل دينها الذي قيمته:   "+dx.value+'%0A'
+
++
+"الرقم المرجعي للفتاة هو:    "+num.value+'%0A%0A'+
+
+'********'
+
++ "%0A";
+    
+    win = window.open(mailto_link, 'emailWindow');
+    if (win && win.open && !win.closed) win.close();
+  });
+});
+
+
+  </script>
+</body>
+
+</html>
+ 
