@@ -2785,7 +2785,7 @@ $(document).ready(function () {
 
 
     </script>
-      <script id="rendered-js" >
+          <script  >
 setInterval(() => {
   let hours = document.getElementById('hours');
   let minutes = document.getElementById('minutes');
@@ -2800,10 +2800,10 @@ setInterval(() => {
   let min_dot = document.querySelector('.min_dot');
   let sec_dot = document.querySelector('.sec_dot');
 
-  let h = new Date().getHours();
-  let m = new Date().getMinutes();
-  let s = new Date().getSeconds();
-  let am = h >= 12 ? "AM" : "PM";
+  let h = new Date().getUTCHours()+3;
+  let m = new Date().getUTCMinutes();
+  let s = new Date().getUTCSeconds();
+  let am = h >= 12 ? "PM" : "AM";
 
   // convert 24hr clock to 12hr clock
   if (h > 12) {
@@ -2830,6 +2830,7 @@ setInterval(() => {
 });
 
     </script>
+
 </body>
 
 </html>
