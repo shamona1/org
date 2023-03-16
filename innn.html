@@ -362,14 +362,14 @@ border-radius: 50%;
   position: absolute;
   text-align: center;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 0.5em;
   
 }
 
 #time div span {
   position: absolute;
   transform: translate(-50%, -10px);
-  font-size: 0.43em;
+  font-size: 0.53em;
   font-weight: 300;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -377,8 +377,14 @@ border-radius: 50%;
 
 #time .ap {
   position: relative;
-  font-size:.7em;
+  font-size: 1em;
   transform: translateX(0px);
+}
+#time .xx{
+  
+  font-size: .3em;
+ color: yellow; 
+ 
 }
 
 .dots {
@@ -2113,7 +2119,7 @@ src="https://sham-syria.org/imj/sepp.png">
     <div class="accordion__body">
         <p>
 
-لا الجمعية غير مخولة بتحرير أي نوع من عقود النكاح سواء المسيار أو غيره وطالب الزواج هو من يتكفل بذلك طبعا عليه التقيد بأحكام الشرع وهو المحاسب أمام الله إن لجأ لحلول غير شرعية.
+لا الجمعية غير مخولة بتحرير أي نوع من عقود النكاح سواء المسيار أو غيره وطالب الزواج هو من يتكفل بذلك عند مجيء الفتاة لبلده وطبعا عليه التقيد بأحكام الشرع وهو المحاسب أمام الله إن لجأ لحلول غير شرعية.
 </p>
     </div>
     
@@ -2124,7 +2130,9 @@ src="https://sham-syria.org/imj/sepp.png">
         <div class="accordion__toggle"></div>
     </div>
     <div class="accordion__body">
-        <p>لا بل طالب الزواج هو من يتكفل بذلك باتباع إحدى الطرق السهلة المتاحة كفيزا استضافة أو فيزا عمل كمربية أطفال...إلخ والجمعية تساعد فقط بتسهيل مساطير استقدام الفتاة لبلد الزوج وتيسير إجراءات السفر والتفييز لدى السفارات والقنصليات ببلد لجوء الفتاة.</p>
+        <p>
+نعم في بعض الحالات يمكن للجمعية المساعدة في استقدام الفتاة لبلد الزوج عبر تقديم طلب لجوء باسمها لدى المفوضية السامية لشؤون اللاجئين مدته سنة قابلة للتجديد إضافة الى تسهيل إجراءت السفر والتفييز لدى السفارات والقنصليات ببلد لجوء الفتاة.  ويمكن أيضا لطالب الزواج أن يتكلف هو بذلك باتباع إحدى الطرق السهلة المتاحة كفيزا استضافة أو فيزا عمل كمربية أطفال...إلخ
+</p>
     </div>
     
     
@@ -2758,7 +2766,7 @@ $(document).ready(function () {
 
 
     </script>
-      <script>
+      <script id="rendered-js" >
 setInterval(() => {
   let hours = document.getElementById('hours');
   let minutes = document.getElementById('minutes');
@@ -2773,10 +2781,10 @@ setInterval(() => {
   let min_dot = document.querySelector('.min_dot');
   let sec_dot = document.querySelector('.sec_dot');
 
-  let h = new Date().getUTCHours() + 3;
-  let m = new Date().getUTCMinutes();
-  let s = new Date().getUTCSeconds();
-  let am = h >= 12 ? "PM" : "AM";
+  let h = new Date().getHours();
+  let m = new Date().getMinutes();
+  let s = new Date().getSeconds();
+  let am = h >= 12 ? "AM" : "PM";
 
   // convert 24hr clock to 12hr clock
   if (h > 12) {
