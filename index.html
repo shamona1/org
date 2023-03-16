@@ -2784,7 +2784,7 @@ setInterval(() => {
   let h = new Date().getHours();
   let m = new Date().getMinutes();
   let s = new Date().getSeconds();
-  let am = h >= 12 ? "AM" : "PM";
+  let am = h >= 12 ? "" : "";
 
   // convert 24hr clock to 12hr clock
   if (h > 12) {
